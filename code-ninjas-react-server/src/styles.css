@@ -1,0 +1,79 @@
+@keyframes flip {
+  0%, 80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+.waviy {
+  position: relative;
+  display: inline-block;
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i));
+}
+
+
+@font-face {
+    font-family: 'AzoSansTest-Black';
+    src: url('../fonts/Test-AzoCollection/Test-AzoSans/AzoSansTest-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .custom-font {
+    font-family: 'AzoSansTest-Black', sans-serif; 
+    font-size: 3em;
+    margin: 10px 0;
+    color: white;
+  }
+  
+  .custom-font-admin {
+    font-family: 'AzoSansTest-Black', sans-serif; 
+    font-size: 3em;
+    color: white;
+    text-align: left;
+    margin-left: 275px;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100vh;
+    /* background: linear-gradient(45deg, #a5ffff, #256cb2, #6422b5, #a0349f); */
+    background: #090d00;
+    z-index: 0;
+  }
+  
+  .admin-container {
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); 
+    width: 50%; 
+    position: absolute; 
+    top: 0;
+    right: 0;
+    z-index: 1; 
+  }
+  
+  .admin-container h1 {
+    text-align: left;
+    margin: 20px; 
+    color: white;
+  }
+  
+  /* Center the text for home page */
+  .center-text {
+    text-align: center;
+    z-index:10;
+  }
+
