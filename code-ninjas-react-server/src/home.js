@@ -21,6 +21,8 @@ const Home = () => {
           <span style={{ '--i': 13 }}>a</span>
           <span style={{ '--i': 14 }}>s</span>
           <span style={{ '--i': 15 }}>!</span>
+          <br />
+          <br />
           <span style={{ '--i': 16 }}>P</span>
           <span style={{ '--i': 17 }}>l</span>
           <span style={{ '--i': 18 }}>e</span>
@@ -48,14 +50,16 @@ const Home = () => {
           <span style={{ '--i': 40 }}>a</span>
           <span style={{ '--i': 41 }}>n</span>
           <span style={{ '--i': 42 }}>d</span>
-          <span style={{ '--i': 43 }}> </span>
+          <span style={{ '--i': 43 }}>s</span>
+          <br />
+       
           <span style={{ '--i': 44 }}>t</span>
           <span style={{ '--i': 45 }}>o</span>
           <span style={{ '--i': 46 }}>&nbsp;</span>
           <span style={{ '--i': 47 }}>s</span>
           <span style={{ '--i': 48 }}>e</span>
           <span style={{ '--i': 49 }}>e</span>
-          <span style={{ '--i': 50 }}> </span>
+          <span style={{ '--i': 50 }}>&nbsp;</span>
           <span style={{ '--i': 51 }}>y</span>
           <span style={{ '--i': 52 }}>o</span>
           <span style={{ '--i': 53 }}>u</span>

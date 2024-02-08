@@ -15,21 +15,21 @@
   font-size: 40px;
   color: #fff;
   text-transform: uppercase;
-  animation: flip 2s infinite;
-  animation-delay: calc(.2s * var(--i));
+  animation: flip 4s infinite;
+  animation-delay: calc(.03s * var(--i));
 }
 
 
 @font-face {
     font-family: 'AzoSansTest-Black';
-    src: url('../fonts/Test-AzoCollection/Test-AzoSans/AzoSansTest-Black.otf') format('opentype');
+    src: url('../fonts/Test-AzoCollection/Test-AzoSans/AzoSansTest-Thin.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
-  
+
   .custom-font {
     font-family: 'AzoSansTest-Black', sans-serif; 
-    font-size: 3em;
+    font-size: 5em;
     margin: 10px 0;
     color: white;
   }
@@ -40,6 +40,7 @@
     color: white;
     text-align: left;
     margin-left: 275px;
+    z-index:100;
   }
   
   .home-container {
@@ -62,7 +63,7 @@
     position: absolute; 
     top: 0;
     right: 0;
-    z-index: 1; 
+    z-index: 2; 
   }
   
   .admin-container h1 {
