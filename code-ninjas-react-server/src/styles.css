@@ -12,7 +12,7 @@
 .waviy span {
   position: relative;
   display: inline-block;
-  font-size: 40px;
+  font-size: 55px;
   color: #fff;
   text-transform: uppercase;
   animation: flip 4s infinite;
@@ -29,7 +29,7 @@
 
   .custom-font {
     font-family: 'AzoSansTest-Black', sans-serif; 
-    font-size: 5em;
+    font-size: 6em;
     margin: 10px 0;
     color: white;
   }
@@ -39,42 +39,56 @@
     font-size: 3em;
     color: white;
     text-align: left;
-    margin-left: 275px;
+    margin-left: -1150px;
     z-index:100;
   }
   
   .home-container {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     height: 100vh;
-    /* background: linear-gradient(45deg, #a5ffff, #256cb2, #6422b5, #a0349f); */
     background: #090d00;
     z-index: 0;
   }
   
   .admin-container {
-    display: flex;
-    justify-content: flex-end;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7); 
+    position: fixed;
+    right: 0; 
+    top: 0; 
     width: 50%; 
-    position: absolute; 
-    top: 0;
-    right: 0;
-    z-index: 2; 
+    height: 100%; 
+    background: rgba(226, 8, 255, 0.15); 
+    backdrop-filter: blur(10px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1); 
+    border-left: 1px solid rgba(255, 255, 255, 0.3); 
+    z-index:2;
   }
   
-  .admin-container h1 {
+   .admin-container h1 {
     text-align: left;
     margin: 20px; 
     color: white;
   }
   
-  /* Center the text for home page */
   .center-text {
     text-align: center;
     z-index:10;
   }
 
+  .bottom-right-image {
+    position: fixed;
+    bottom: 0px;
+    right: -39px;
+    width: 1000px; 
+    height: auto; 
+    z-index:20
+  }
+
+
+
+  
