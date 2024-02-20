@@ -1,30 +1,21 @@
 # Prize Rewards System - FrontEnd
 
-Welcome to the Prize Rewards System FrontEnd project! This README provides instructions on how to set up and run the project.
+Welcome to the Prize Rewards System FrontEnd project! 
 
 ## Table of Contents
-1. [Installation](#installation)
-   - [Node.js and npm](#nodejs-and-npm)
-   - [Project Dependencies](#project-dependencies)
-2. [Getting Started](#getting-started)
-3. [Scripts](#scripts)
 
-## Installation
 
 ### Node.js and npm
 
 Ensure that you have Node.js and npm installed on your machine. You can download them from [Node.js official website](https://nodejs.org/).
 
-### Project Dependencies
+### Start the project
 
-To install the project dependencies, run the following command:
+Be in the "code-ninjas-react-server" directory and run "npm start" in the terminal
 
-```bash
-# Navigate to the project directory
-cd path/to/your/project
+### Current navigation system
 
-# Install dependencies
-npm install
+To change tabs manually enter the end point to the end of the URL
 
-# Option 2:
-python install_dependencies.py
+The current method with the hamburger dropdown menu is not functional
+
