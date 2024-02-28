@@ -27,6 +27,10 @@
     font-style: normal;
   }
 
+  body {
+    font-family: 'AzoSansTest-Black', sans-serif;
+  }
+
   .custom-font {
     font-family: 'AzoSansTest-Black', sans-serif; 
     font-size: 6em;
@@ -90,5 +94,30 @@
   }
 
 
-
+  .ninja-image {
+    position: fixed;
+    top: 40px; 
+    left: 40px; 
+    z-index: 30; 
+    height: 60%;
+    width: auto;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+  .ninja-image {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  
   

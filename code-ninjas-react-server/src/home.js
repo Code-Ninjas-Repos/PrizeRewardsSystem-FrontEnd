@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css';
 import cornerImage from './images/Ninjas in Costumes.png';
+import ninjaImage from './images/ninja.png';
 import './loader.css'
 import { transition } from './loader.js'
 
@@ -175,6 +176,7 @@ const Home = () => {
       </h1>
       <button className="btn" onClick={handleTransition}>Begin Transition</button>
       <img src={cornerImage} alt=';' className="bottom-right-image" />
+      <img src={ninjaImage} alt=';' className="ninja-image" />
     </div>
 
   );

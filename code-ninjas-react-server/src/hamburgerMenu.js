@@ -26,10 +26,8 @@ const HamburgerMenu = () => {
         <div className="nav-wrapper">
           <nav>
             <Link to="/admin/home" className={location.pathname === '/admin/home' ? 'active' : ''}>Home</Link>
-            <Link to="/admin/about" className={location.pathname === '/admin/about' ? 'active' : ''}>About</Link>
-            <Link to="/admin/manage" className={location.pathname === '/admin/manage' ? 'active' : ''}>Manage Stars</Link>
             <Link to="/admin/createAccount" className={location.pathname === '/admin/createAccount' ? 'active' : ''}>Create Account</Link>
-            <Link to="/admin/profile" className={location.pathname === '/admin/profile' ? 'active' : ''}>Add/Remove Tags</Link>
+            <Link to="/admin/profile" className={location.pathname === '/admin/profile' ? 'active' : ''}>Profile</Link>
           </nav>
         </div>
       </div>

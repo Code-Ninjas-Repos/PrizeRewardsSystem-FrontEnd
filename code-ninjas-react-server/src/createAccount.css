@@ -1,63 +1,53 @@
 .create-account-container {
-    width: 340px;
-    margin: 150px auto;
-    position: relative;
-    top: 50%; 
-    transform: translateY(-50%);
-    padding: 30px;
-    border-radius: 10px;
-    background-color: transparent;
-  }
-  
-  .create-account-form input[type="text"] {
-    width: calc(100% - 12px);
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    background-color: transparent;
-    color: #fff;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
-  }
-  
-  .create-account-form label {
-    display: block;
-    margin-bottom: 10px;
-    color: #fff;
-    font-size: 16px;
-  }
-  
-  .create-account-form button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    background-color: #6f73e3;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .create-account-form button:hover {
-    background-color: #6422b5;
-  }
-
-  input[type="text"]:focus,
-  input[type="checkbox"]:focus {
-  outline: none;
-  border-color: #6422b5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
+.create-account-form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
 
-.name-inputs {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom:30px;
+.form-group {
+  margin-bottom: 20px;
 }
-  
-.name-inputs .form-group {
-    width: calc(45% - 10px); 
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
 }
-  
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+  width: 96%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6f73e3;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #6422b5;
+}
