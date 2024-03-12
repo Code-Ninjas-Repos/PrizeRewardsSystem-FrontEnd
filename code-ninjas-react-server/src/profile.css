@@ -86,9 +86,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  align-items: flex-start;
   padding: 20px;
   background: rgba(255, 255, 255, 0.9); 
   border-radius: 8px;
@@ -102,18 +99,15 @@
   margin-bottom: 20px;
 }
 
-
 .lower-forms-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-
 .lower-form {
   width: calc(50% - 10px); 
   margin: 0 5px;
-  width: calc(50% - 10px);
 }
 
 @media (max-width: 768px) {
@@ -121,10 +115,10 @@
     flex-direction: column;
   }
 
-  .lower-form {
+  .lower-form, .profile-form, .nfc-form {
     width: 100%; 
-    margin: 10px 0; 
-    width: calc(50% - 10px);
+    margin: 10px 0;
+    margin-right: 0;
   }
 }
 

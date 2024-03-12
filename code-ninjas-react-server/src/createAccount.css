@@ -12,7 +12,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 600px;
+  max-width: 900px; 
 }
 
 .form-group {
@@ -30,11 +30,12 @@
 .form-group input[type="date"],
 .form-group input[type="email"],
 .form-group input[type="tel"] {
-  width: 96%;
+  width: 100%; 
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f8f8f8;
+  box-sizing: border-box; 
 }
 
 .submit-button {
@@ -50,4 +51,30 @@
 
 .submit-button:hover {
   background-color: #6422b5;
+}
+
+@media (max-width: 768px) {
+  .create-account-form {
+    padding: 15px; 
+    max-width: 80%; 
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group input[type="date"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"] {
+    padding: 8px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .create-account-form {
+    max-width: 90%; 
+  }
+
+  .submit-button {
+    padding: 10px; 
+    font-size: 14px; 
+  }
 }

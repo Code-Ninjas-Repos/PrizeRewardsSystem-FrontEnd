@@ -1,24 +1,35 @@
 .welcome-image {
   width: 80%;
-  height:50%;
+  height: auto; 
   object-fit: cover;
-  border-radius: 20px 20px 20px 20px; 
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 4px solid #fff;
   position: relative;
   filter: brightness(1.1) contrast(1.2);
+  max-width: 800px;
+  margin: 20px; 
 }
 
-.welcome-message h2, .welcome-message p {
+.welcome-message h2, .inspirational-quote p {
   color: #FFFFFF;
   text-align: center;
+  font-size: 2rem; 
+  margin: 20px 0;
+}
+
+.welcome-message p {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.25rem; 
 }
 
 .action-items {
   display: flex;
   justify-content: center;
-  gap: 20px; 
+  gap: 20px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .action-button {
@@ -29,6 +40,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 1rem;
 }
 
 .action-button:hover {
@@ -40,6 +52,7 @@
   font-style: italic;
   text-align: center;
   color: #FFFFFF;
+  font-size: 1.125rem; 
 }
 
 .admin-container {
@@ -47,4 +60,36 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  max-width: 95%; 
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .welcome-message h2 {
+    font-size: 1.75rem;
+  }
+
+  .welcome-message p, .inspirational-quote p {
+    font-size: 1rem;
+  }
+
+  .action-button {
+    padding: 8px 15px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-image {
+    width: 95%;
+    margin: 10px auto; 
+  }
+
+  .welcome-message h2 {
+    font-size: 1.5rem;
+  }
+
+  .welcome-message p, .inspirational-quote p {
+    font-size: 0.875rem;
+  }
 }

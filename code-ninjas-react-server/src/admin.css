@@ -3,23 +3,28 @@
   border-radius: 20px;
   background: #ffffff; 
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  width: 80%; 
-  max-width: 400px; 
+  width: 100%; 
+  max-width: 600px; 
+  margin: auto; 
 }
 
 .logo-container {
-  margin-bottom: 0px;
+  margin-bottom: 20px; 
+  text-align: center;
 }
 
 .logo {
-  width: 390px; 
+  width: 80%;
+  max-width: 390px; 
+  height: auto; 
+  margin: auto; 
 }
 
 .login-title {
   color: #333; 
   text-align: center;
   margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 2rem; 
 }
 
 .form-group {
@@ -29,7 +34,8 @@
 label {
   display: block;
   margin-bottom: 8px;
-  color: #333; 
+  color: #333;
+  font-size: 1rem; 
 }
 
 input[type="email"],
@@ -40,7 +46,7 @@ input[type="password"] {
   border-radius: 10px;
   background-color: #fff; 
   color: #333; 
-  font-size: 16px;
+  font-size: 1rem; 
 }
 
 input[type="email"]:focus,
@@ -59,9 +65,29 @@ input[type="password"]:focus {
   background-color: #6f73e3;
   color: #fff; 
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .login-button:hover {
-  background-color: #6422b5; 
+  background-color: #5a60b7;  
+}
+
+@media (max-width: 768px) {
+  .login-panel {
+    padding: 20px;
+  }
+
+  .login-title, .form-group label, input[type="email"], input[type="password"], .login-button {
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .login-panel {
+    padding: 15px;
+  }
+
+  .login-title, .form-group label, input[type="email"], input[type="password"], .login-button {
+    font-size: 0.8rem; 
+  }
 }

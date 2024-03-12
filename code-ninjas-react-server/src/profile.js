@@ -10,24 +10,42 @@ const Profile = () => {
     reason: 'Finished his summer project',
     newTag: '',
     removeTag: '',
+    impactId: '',
   });
+
+  // Added state for star adjustment
+  const [starAdjustment, setStarAdjustment] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setProfileData(prevState => ({
-      ...prevState,
-      [name]: value,
-    }));
+    // Handling star adjustment separately
+    if (name === 'starAdjustment') {
+      setStarAdjustment(value);
+    } else {
+      setProfileData(prevState => ({
+        ...prevState,
+        [name]: value,
+      }));
+    }
   };
 
   const handleSubmit = (e, formType) => {
     e.preventDefault();
+    // Adjusting switch cases as needed
     switch (formType) {
       case 'search':
         // Implement search functionality
         break;
       case 'update':
-        // Implement update functionality
+        // Calculate and update stars based on the adjustment
+        const adjustment = parseInt(starAdjustment, 10);
+        if (!isNaN(adjustment)) {
+          const newStars = profileData.stars + adjustment;
+          setProfileData({...profileData, stars: newStars});
+          // Reset the star adjustment
+          setStarAdjustment('');
+          // Here, add the logic to log the transaction to the database
+        }
         break;
       case 'addTag':
         // Implement add tag functionality
@@ -36,7 +54,7 @@ const Profile = () => {
         // Implement remove tag functionality
         break;
       default:
-      // Handle other cases
+        // Handle other cases
     }
   };
 
@@ -62,15 +80,15 @@ const Profile = () => {
               <p><strong>First Name:</strong> {profileData.fname}</p>
               <p><strong>Last Name:</strong> {profileData.lname}</p>
               <p><strong>Date of Birth:</strong> {profileData.dob}</p>
-              <p><strong>Parent's Phone:</strong> {profileData.parentPhone}</p>
+              <p><strong>Impact ID:</strong> {profileData.impactId}</p>
               <p><strong>NFC Tag ID:</strong> {profileData.newTag || profileData.removeTag}</p>
             </div>
           </div>
           <div className="lower-forms-container">
             <form className="profile-form lower-form" onSubmit={(e) => handleSubmit(e, 'update')}>
               <div className="form-group">
-                <label htmlFor="stars">Update Stars:</label>
-                <input type="number" id="stars" name="stars" value={profileData.stars} onChange={handleChange} required />
+                <label htmlFor="starAdjustment">Adjust Stars:</label>
+                <input type="number" id="starAdjustment" name="starAdjustment" value={starAdjustment} onChange={handleChange} required />
               </div>
               <div className="form-group">
                 <label htmlFor="reason">Reason for Update:</label>
@@ -80,7 +98,7 @@ const Profile = () => {
                   value={profileData.reason}
                   onChange={handleChange}
                   required
-                  rows="4" 
+                  rows="4"
                   className="textarea-reason"
                 ></textarea>
               </div>

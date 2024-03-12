@@ -7,8 +7,7 @@ const CreateAccount = () => {
     fname: '',
     lname: '',
     dob: '',
-    email: '',
-    parentPhone: '',
+    impactId: '',
   });
 
   const handleChange = (e) => {
@@ -45,12 +44,8 @@ const CreateAccount = () => {
             <input type="date" id="dob" name="dob" value={formData.dob} onChange={handleChange} required />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email (optional):</label>
-            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="parentPhone">Parent's Phone Number:</label>
-            <input type="tel" id="parentPhone" name="parentPhone" value={formData.parentPhone} onChange={handleChange} required />
+            <label htmlFor="impactId">Impact ID:</label>
+            <input type="text" id="impactId" name="impactId" value={formData.impactId} onChange={handleChange} />
           </div>
           <button type="submit" className="submit-button">Create Account</button>
         </form>

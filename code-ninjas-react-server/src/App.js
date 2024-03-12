@@ -25,12 +25,9 @@ function App() {
   );
 }
 
-
-// Create a separate component to conditionally render HamburgerMenu
 function HamburgerMenuWithCondition() {
   const location = useLocation();
 
-  // Check if the current path is neither '/' nor '/admin', if yes, render HamburgerMenu
   const shouldRenderHamburgerMenu = !['/', '/admin'].includes(location.pathname);
 
   return shouldRenderHamburgerMenu ? <HamburgerMenu /> : null;
